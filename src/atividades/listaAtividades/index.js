@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native';
 
 import styles from './styles';
 
-export default function ListaExemplos() {
+export default function ListaAtividades() {
 
     const navigation = useNavigation();
 
@@ -11,27 +11,27 @@ export default function ListaExemplos() {
 
         <View style={styles.container}>
 
-            <Text style={styles.titulo}>Exemplos</Text>
+            <Text style={styles.titulo}>Atividades</Text>
 
             <TouchableOpacity 
                 style={styles.botao} 
-                onPress={() => navigation.navigate('Exemplo01')} 
+                onPress={() => navigation.navigate('Atividade01')} 
             >
-                <Text style={styles.textoBtn}>Exemplo 1</Text>
+                <Text style={styles.textoBtn}>Atividade 1</Text>
             </TouchableOpacity>
 
             <TouchableOpacity 
                 style={styles.botao} 
-                onPress={() => navigation.navigate('Exemplo02')}
+                onPress={() => navigation.navigate('Atividade02')}
             >
-                <Text style={styles.textoBtn}>Exemplo 2</Text>
+                <Text style={styles.textoBtn}>Atividade 2</Text>
             </TouchableOpacity>
 
             <TouchableOpacity 
                 style={styles.botao} 
-                onPress={() => navigation.navigate('Exemplo03')}
+                onPress={() => navigation.navigate('Atividade03')}
             >
-                <Text style={styles.textoBtn}>Exemplo 3</Text>
+                <Text style={styles.textoBtn}>Atividade 3</Text>
             </TouchableOpacity>
         </View>
 

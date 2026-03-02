@@ -13,13 +13,14 @@ import Exemplo09 from '../exemplos/ex09';
 
 const Stack = createNativeStackNavigator();
 
-function RootStack() {
+function StackExemplos() {
   return (
     <Stack.Navigator
       screenOptions={{
         headerStyle: { backgroundColor: '#777'},         
-        // headerShown: false,
+        // headerShown: false,         
       }}                  
+      // initialRouteName="Home"
     >
       <Stack.Screen name="Home" component={ListaExemplos} options={{headerTintColor: '#fff',}} />
       <Stack.Screen
@@ -39,4 +40,4 @@ function RootStack() {
   );
 }
 
-export default RootStack;
+export default StackExemplos;

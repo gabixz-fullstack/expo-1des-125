@@ -32,13 +32,15 @@ import Navegacao from './src/revisao/navegacao';
 
 // navegação
 import ListaExemplos from './src/exemplos/listaExemplos';
-import RootStack from './src/navegacao/stack';
+import StackExemplos from './src/navegacao/stackExemplos';
+import StackAtividades from './src/navegacao/stackAtividades'; 
+import BottomTabs from './src/navegacao/bottomTabs';
 
 export default function App() {
   return (
     <View style={styles.container}>
       <NavigationContainer>
-        <RootStack />
+        <BottomTabs />
       </NavigationContainer>
       <StatusBar style="light" />
     </View>
